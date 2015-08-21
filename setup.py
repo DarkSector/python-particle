@@ -1,7 +1,7 @@
 from distutils.core import setup
 import os
 
-# README = open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
+README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
@@ -13,7 +13,7 @@ setup(
     include_package_data=True,
     license='MIT License',  # example license
     description='A Python wrapper around the Particle (particle.io) Cloud API',
-    # long_description=README,
+    long_description=README,
     install_requires = [
         'python-dateutil==2.4.2',
         'pytz==2015.4',
