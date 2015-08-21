@@ -25,7 +25,7 @@ setup(
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Environment :: Web Environment',
-        'Framework :: Requests',
+        #'Framework :: Requests',
         'Intended Audience :: Developers',
         'Intended Audience :: Science/Research',
         'Intended Audience :: Information Technology',
