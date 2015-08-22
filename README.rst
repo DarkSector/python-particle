@@ -11,6 +11,13 @@ Installation Notes
 Installable directly via pip. However some systems might need to install requests[security] if they get the InsecurePlatformWarning. That hasn't been included in the requirements by default because it may not be required on all platforms.
 
 
+===========================
+Local configuration Support
+===========================
+
+As of v0.2 local support is available to configure devices over serial.
+
+
 =====
 Tests
 =====
