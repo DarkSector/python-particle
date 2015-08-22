@@ -179,10 +179,12 @@ class NoDevicesConnected(Exception):
         super(NoDevicesConnected, self).__init__(message)
         self.errors = errors
 
+
 class UnexpectedResponse(Exception):
     def __init__(self, message, errors=None):
         super(UnexpectedResponse, self).__init__(message)
         self.errors = errors
+
 
 class Local(object):
 
