@@ -173,6 +173,16 @@ class Particle(object):
             return response.json()
         return None
 
+    def call_function(self, device_serial, function_name, arguments):
+        url = self.get_api_prefix() + 'devices/%s/%s' % (device_serial, function_name)
+        session = self.get_session()
+        response = session.post(url, data={"arg": arguments})
+        if response.ok and response.status_code == 200:
+            return response.json()
+        return None
+
+
+
 
 class NoDevicesConnected(Exception):
     def __init__(self, message, errors=None):
