@@ -17,7 +17,7 @@ setup(
     install_requires = [
         'python-dateutil==2.4.2',
         'pytz==2015.4',
-        'requests==2.7.0',
+        'requests==2.20.0',
 	'pexpect==3.3'
     ],
     url='https://github.com/DarkSector/python-particle',
